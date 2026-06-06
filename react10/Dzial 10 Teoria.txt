@@ -1,2 +1,0 @@
-onClick={handleClick} do klamer jest przekazana definicja funkcji zdefiniowana poza JSX
-onClick={handleClick()} niepoprawne funkcja wywolywana przy uruchomieniu
