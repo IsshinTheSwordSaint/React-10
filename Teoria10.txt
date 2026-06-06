@@ -1,0 +1,5 @@
+Zapis onClick={handleClick} przekazuje do zdarzenia referencję do funkcji. Oznacza to, że funkcja zostanie uruchomiona dopiero wtedy, gdy użytkownik faktycznie kliknie dany element.
+
+Zapis onClick={handleClick()} wywołuje funkcję natychmiatek w momencie renderowania komponentu. React przypisze do onClick nie samą funkcję, ale to, co ta funkcja akurat zwróci (najczęściej undefined), przez co kliknięcie nie zadziała, a samo wywołanie może zapętlić aplikację.
+
+Poprawny jest zapis onClick={handleClick}, ponieważ React potrzebuje wskaźnika do funkcji, którą ma uruchomić w przyszłości, a nie natychmiastowego wyniku jej działania.
